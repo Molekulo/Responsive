@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Početna stranica</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Ultra&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Početna stranica</a></li>
+					<li><a href="istorija.html">Istorija Pirota</a></li>
+					<li><a href="lokacija.html">Lokacija Pirota</a></li>
+					<li><a href="kontakt.html" class="aktivna">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Kontaktirajte nas</h1>
+			<h2>Pošaljite pitanje???</h2>
+			<form method="post" action="#" id="forma1" name="forma1">
+				<fieldset>
+					<label for="name">Vaše ime:</label><br>
+					<input type="text" name="name" id="name" placeholder="Unesite Vaše ime" required><br>
+					
+					<label for="lastname">Vaše prezime:</label><br>
+					<input type="text" name="lastname" id="lastname" placeholder="Unesite Vaše prezime" required><br>
+					
+					<label for="email">Vaš E-mail:</label><br>
+					<input type="email" name="email" id="email" placeholder="Unesite Vaš e-mail" required><br>
+					
+					<label for="textarea">Vaše pitanje:</label><br>
+					<textarea name="textarea" id="textarea" rows="10" required></textarea><br>
+					
+					<input type="submit" name="send" id="send" value="Pošalji">
+				
+					<div id="extra">
+						<div id="left">
+							<input type="checkbox" name="obavestenja" id="obavestenja" />
+							<label for="obavestenja">Primaj obaveštenja?</label><br>
+						</div>
+						<div id="right">
+							<label for="answer">Kako ste čuli za nas? </label>
+							<select name="answer" size="1" id="answer">
+								<option value="1" selected>Preko Interneta</option>
+								<option value="2">Od prijatelja</option>
+								<option value="3">U novinama</option>
+								<option value="4">Na televiziji</option>
+								<option value="5">Ostalo</option>
+							</select><br>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</main>
+		<footer>
+		  <p>&copy; Sva prava zadržana.</p>
+		</footer>
+	</div>
+</body>
+</html>
